@@ -1,5 +1,5 @@
 const requests = {
-  fetchNowPlaying: "movie/now_playing",
+  fetchNowPlaying: "/movie/now_playing",
   fetchTrending: "/trending/all/week",
   fetchTopRated: "/movie/top_rated",
   fetchActionMovies: "/discover/movie?with_genres=28",
