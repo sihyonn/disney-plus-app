@@ -2,6 +2,8 @@ import axios from "../api/axios";
 import requests from "../api/requests";
 import React, { useEffect, useState } from "react";
 
+import "../style/Banner.css";
+
 const Banner = () => {
   const [movie, setMovie] = useState([]);
   useEffect(() => {
@@ -20,8 +22,10 @@ const Banner = () => {
       params: { append_to_response: "videos" },
     });
     setMovie(movieDetail);
+  };
 
-    console.log(res);
+  const truncate = (str, n) => {
+    return str?.length < n ? str.substring(0, n) + "..." : str;
   };
 
   return (
@@ -33,16 +37,16 @@ const Banner = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="banner_contents">
-        <h1 className="banner_title">
+      <div className="banner__contents">
+        <h1 className="banner__title">
           {movie.title || movie.name || movie.original_name}
         </h1>
-        <div className="banner_buttons">
+        <div className="banner__buttons">
           {movie?.videos?.results[0]?.key && (
-            <button className="banner_button play">Play</button>
+            <button className="banner__button play">Play</button>
           )}
         </div>
-        <p className="banner_desc">{movie.overview}</p>
+        <p className="banner__desc">{truncate(movie.overview, 10)}</p>
       </div>
       <div className="banner--fadeBottom" />
     </header>
