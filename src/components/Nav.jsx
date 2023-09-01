@@ -45,7 +45,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <NavWrapper show={show}>
+    <NavWrapper show={show.toString()}>
       <Logo>
         <img
           src="images/logo.svg"
