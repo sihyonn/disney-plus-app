@@ -103,9 +103,13 @@ const UserImg = styled.img`
 `;
 
 const Nav = () => {
+  // 로컬스토리지에 유저데이터 있으면 꺼내오고 아니면 빈객체 이걸 상태에 초기값으로 넣어줌
+  const initialUserData = localStorage.getItem("userData")
+    ? JSON.parse(localStorage.getItem("userData"))
+    : {};
   const [show, setShow] = useState(false);
   const [searchValue, setSearchValue] = useState("");
-  const [userData, setUserData] = useState({});
+  const [userData, setUserData] = useState(initialUserData);
 
   const auth = getAuth();
   const provider = new GoogleAuthProvider();
