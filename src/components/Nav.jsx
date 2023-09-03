@@ -152,6 +152,7 @@ const Nav = () => {
       .then((result) => {
         // 보내준 유저데이터 상태로 보관
         setUserData(result.user);
+        localStorage.setItem("userData", JSON.stringify(result.user));
       })
       .catch((error) => {
         console.log(error.message);
