@@ -4,7 +4,8 @@
 최신영화 및 디즈니, 픽사, 마블, 스타워즈, 내셔널 지오그래픽을 한 곳에서 경험할 수 있는 사이트로 </br>
 리액트로 제작하였으며 themoviedb API를 사용하여 만들었습니다.</br>
 
-### Firebase 배포 주소 : [클릭!](https://react-disney-plus-app-396fa.web.app/main)
+### Firebase 배포 주소 : [클릭!](https://react-disney-plus-app-396fa.web.app/)
+
 
 ![2C91F183-6694-4CC4-8C13-0BA1122831B6](https://github.com/sihyonn/disney-plus-app/assets/124874266/d94f964c-58ec-4b92-82f5-e708933b85d2)
 
