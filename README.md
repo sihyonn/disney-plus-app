@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Disney-Plus 클론[카테캠 3단계 필수강의]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 프로젝트는 카카오테크캠퍼스 3단계 필수강의에서 실습한 디즈니플러스 앱 클론 프로젝트입니다!🥳 </br>
+최신영화 및 디즈니, 픽사, 마블, 스타워즈, 내셔널 지오그래픽을 한 곳에서 경험할 수 있는 사이트로 </br>
+리액트로 제작하였으며 themoviedb API를 사용하여 만들었습니다.</br>
 
-## Available Scripts
+### Firebase 배포 주소 : [클릭!](https://react-disney-plus-app-396fa.web.app/main)
 
-In the project directory, you can run:
+![2C91F183-6694-4CC4-8C13-0BA1122831B6](https://github.com/sihyonn/disney-plus-app/assets/124874266/d94f964c-58ec-4b92-82f5-e708933b85d2)
 
-### `npm start`
+![E6AB199E-6A82-40EB-8E1A-C6D65C7C6D30](https://github.com/sihyonn/disney-plus-app/assets/124874266/b0cbfffb-03ca-4eca-b867-0960d68259c0)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![67B8BF7B-463B-471D-B2F3-1D29BF5B27D6](https://github.com/sihyonn/disney-plus-app/assets/124874266/32ad69b4-f7bc-4a7d-b649-4113b5777687)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
