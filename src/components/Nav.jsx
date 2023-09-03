@@ -63,9 +63,17 @@ const Input = styled.input`
   border: none;
 `;
 
+const SignOut = styled.div``;
+
+const UserImg = styled.div``;
+
+const DropDown = styled.div``;
+
 const Nav = () => {
   const [show, setShow] = useState(false);
   const [searchValue, setSearchValue] = useState("");
+  const [userData, setUserData] = useState({});
+
   const auth = getAuth();
   const provider = new GoogleAuthProvider();
 
@@ -105,9 +113,13 @@ const Nav = () => {
     navigate(`/search?q=${e.target.value}`);
   };
 
+  // 인증 관련
   const handleAuth = () => {
     signInWithPopup(auth, provider)
-      .then((result) => {})
+      .then((result) => {
+        // 보내준 유저데이터 상태로 보관
+        setUserData(result.user);
+      })
       .catch((error) => {
         console.log(error.message);
       });
@@ -127,13 +139,21 @@ const Nav = () => {
       {pathname === "/" ? (
         <Login onClick={handleAuth}>Login</Login>
       ) : (
-        <Input
-          value={searchValue}
-          onChange={handleChange}
-          className="nav__input"
-          type="text"
-          placeholder="검색할 키워드를 입력하세요"
-        />
+        <>
+          <Input
+            value={searchValue}
+            onChange={handleChange}
+            className="nav__input"
+            type="text"
+            placeholder="검색할 키워드를 입력하세요"
+          />
+          <SignOut>
+            <UserImg src={userData.photoURL} alt={userData.displayName} />
+            <DropDown>
+              <span>SignOut</span>
+            </DropDown>
+          </SignOut>
+        </>
       )}
     </NavWrapper>
   );
