@@ -39,12 +39,17 @@ const Row = ({ title, id, fetchUrl }) => {
         </div>
         <div>
           {movies.map((movie) => {
-            <img
-              key={movie.id}
-              src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
-              alt={movie.name}
-              onClick={() => handleClick(movie)}
-            />;
+            console.log(
+              `Image URL for ${movie.name}: https://image.tmdb.org/t/p/original${movie.backdrop_path}`
+            );
+            return (
+              <img
+                key={movie.id}
+                src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
+                alt={movie.name}
+                onClick={() => handleClick(movie)}
+              />
+            );
           })}
         </div>
         <div className="slider__arrow-right">
