@@ -6,6 +6,7 @@ import {
   GoogleAuthProvider,
   onAuthStateChanged,
   signInWithPopup,
+  signOut,
 } from "firebase/auth";
 
 const NavWrapper = styled.nav`
@@ -157,6 +158,16 @@ const Nav = () => {
       });
   };
 
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        // 유저 데이터 비워주고
+        setUserData({});
+        navigate("/");
+      })
+      .catch((error) => console.log(error));
+  };
+
   return (
     <NavWrapper show={show.toString()}>
       <Logo>
@@ -182,7 +193,7 @@ const Nav = () => {
           <SignOut>
             <UserImg src={userData.photoURL} alt={userData.displayName} />
             <DropDown>
-              <span>SignOut</span>
+              <span onClick={handleSignOut}>SignOut</span>
             </DropDown>
           </SignOut>
         </>
